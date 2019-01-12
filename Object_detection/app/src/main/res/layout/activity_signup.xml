@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/grad_bg"
+    tools:context=".signupActivity">
+
+    <!--logo image-->
+    <ImageView
+        android:id="@+id/imgView_logo"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="127dp"
+        android:adjustViewBounds="true"
+        android:scaleType="fitCenter"
+        android:src="@drawable/ic_tensorflow_logo" />
+
+    <LinearLayout
+        android:layout_centerVertical="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!--sign up label-->
+        <TextView
+            android:id="@+id/Signup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_margin="15dp"
+            android:fontFamily="sans-serif-medium"
+            android:text="Signup"
+            android:textColor="@color/white"
+            android:textSize="30sp" />
+
+        <!--edit text for email-->
+        <EditText
+            android:id="@+id/editTextEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:hint="  Enter email"
+
+            android:fontFamily="sans-serif-light"
+            android:drawableLeft="@drawable/email"
+            android:textColor="@color/white"
+            android:inputType="textEmailAddress" />
+
+        <!--edit text for password-->
+        <EditText
+            android:id="@+id/editTextPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:hint="  Enter password"
+
+            android:fontFamily="sans-serif-light"
+            android:drawableLeft="@drawable/lock"
+            android:textColor="@color/white"
+            android:inputType="textPassword" />
+
+        <!--edit text for confirm password-->
+        <EditText
+            android:id="@+id/editConfPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:hint="  Confirm password"
+
+            android:fontFamily="sans-serif-light"
+            android:drawableLeft="@drawable/lock"
+            android:textColor="@color/white"
+            android:inputType="textPassword" />
+
+        <!-- sign up button-->
+        <Button
+            android:id="@+id/register"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_below="@+id/editConfPassword"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/btn_bg"
+            android:fontFamily="sans-serif-medium"
+            android:paddingLeft="70dp"
+            android:paddingRight="70dp"
+            android:text="Register"
+            android:textAllCaps="false"
+            android:layout_gravity="center"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+        <ProgressBar
+            android:id="@+id/progressbar_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:visibility="gone" />
+    </LinearLayout>
+
+
+</RelativeLayout>
